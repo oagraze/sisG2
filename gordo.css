@@ -1,0 +1,134 @@
+.app-container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0
+}
+
+.app-theme-white.app-container {
+    background: #f1f4f6
+}
+.app-theme-white .app-sidebar {
+    background: #fff
+}
+.app-theme-white .app-page-title {
+    background: #fff)
+}
+.app-theme-white .app-footer .app-footer__inner,
+.app-theme-white .app-header {
+    background: transparent url(background.png) no-repeat center top;
+    background-size: cover;
+    top: 0px;
+}
+.app-theme-white.fixed-header .app-header__logo {
+    background: rgba(250, 251, 252, .1)
+}
+
+.body-tabs-shadow .body-tabs-animated {
+    padding: .75rem 0
+}
+.body-tabs-shadow .body-tabs-animated .nav-link span {
+    position: relative;
+    z-index: 5
+}
+.body-tabs-shadow .body-tabs-animated .nav-link::before {
+    height: 70%;
+    top: 15%;
+    z-index: 4;
+    bottom: auto;
+    box-shadow: 0 16px 26px -10px rgba(63, 106, 216, .56), 0 4px 25px 0 rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(63, 106, 216, .2);
+    border-radius: 100%;
+    opacity: .5
+}
+.body-tabs-shadow .body-tabs-animated .nav-link.active,
+.body-tabs-shadow .body-tabs-animated .nav-link:hover {
+    color: #fff
+}
+.body-tabs-shadow .body-tabs-animated .nav-link.active::before,
+.body-tabs-shadow .body-tabs-animated .nav-link:hover::before {
+    border-radius: .25rem;
+    opacity: 1
+}
+
+.fixed-header:not(.fixed-sidebar):not(.closed-sidebar) .app-sidebar .app-header__logo {
+    visibility: hidden
+}
+.fixed-sidebar .app-sidebar {
+    position: fixed;
+    height: 100vh
+}
+.fixed-sidebar .app-main .app-main__outer {
+    z-index: 9;
+    padding-left: 280px
+}
+.fixed-sidebar.fixed-header .app-sidebar .app-header__logo {
+    display: none
+}
+.fixed-sidebar:not(.fixed-header) .app-sidebar .app-header__logo {
+    display: flex
+}
+.fixed-sidebar:not(.fixed-header) .app-header {
+    margin-left: 280px
+}
+.fixed-sidebar:not(.fixed-header) .app-header .app-header__logo {
+    display: none
+}
+.fixed-sidebar.closed-sidebar:not(.fixed-header) .app-header {
+    margin-left: 80px
+}
+.fixed-sidebar.closed-sidebar:not(.fixed-header) .app-sidebar .app-header__logo {
+    width: 80px;
+    padding: 0
+}
+.fixed-sidebar.closed-sidebar:not(.fixed-header) .app-sidebar .app-header__logo .logo-src {
+    display: none
+}
+.fixed-sidebar.closed-sidebar:not(.fixed-header) .app-sidebar .app-header__logo .header__pane {
+    margin-right: auto
+}
+.closed-sidebar.fixed-sidebar .app-main__outer {
+    padding-left: 80px
+}
+.closed-sidebar.fixed-header:not(.fixed-sidebar) .app-sidebar .app-header__logo {
+    visibility: hidden
+}
+
+.fixed-header .app-header {
+    position: fixed;
+    width: 100%;
+    top: 0
+}
+.fixed-header .app-header .app-header__logo {
+    visibility: visible
+}
+.fixed-header .app-main {
+    padding-top: 60px
+}
+.fixed-header:not(.fixed-sidebar):not(.closed-sidebar) .app-sidebar .app-header__logo {
+    visibility: hidden
+}
+.fixed-sidebar.fixed-header .app-sidebar .app-header__logo {
+    display: none
+}
+.fixed-sidebar:not(.fixed-header) .app-sidebar .app-header__logo {
+    display: flex
+}
+.fixed-sidebar:not(.fixed-header) .app-header {
+    margin-left: 280px
+}
+.fixed-sidebar:not(.fixed-header) .app-header .app-header__logo {
+    display: none
+}
+.fixed-sidebar.closed-sidebar:not(.fixed-header) .app-header {
+    margin-left: 80px
+}
+.fixed-sidebar.closed-sidebar:not(.fixed-header) .app-sidebar .app-header__logo {
+    width: 80px;
+    padding: 0
+}
+.fixed-sidebar.closed-sidebar:not(.fixed-header) .app-sidebar .app-header__logo .logo-src {
+    display: none
+}
+.fixed-sidebar.closed-sidebar:not(.fixed-header) .app-sidebar .app-header__logo .header__pane {
+    margin-right: auto
+}
